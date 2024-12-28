@@ -1,6 +1,7 @@
 import './App.css';
 import Bulb from './components/Bulb';
 import Counter from './components/Counter';
+import HookExam from './components/HookExam';
 import Register from './components/Register';
 
 // 부모 component
@@ -9,7 +10,8 @@ function App() {
     <>
       {/* <Bulb />
       <Counter /> */}
-      <Register />
+      {/* <Register /> */}
+      <HookExam />
     </>
   );
 
