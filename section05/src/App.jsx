@@ -1,23 +1,15 @@
 import './App.css';
-import { useState } from 'react';
+import Bulb from './components/Bulb';
+import Counter from './components/Counter';
+import Register from './components/Register';
 
 // 부모 component
 function App() {
-  const [count, setCount] = useState(0);
-  const [light, setLight] = useState('OFF');
-
   return (
     <>
-      <h1>{light}</h1>
-      <button
-        // App component를 re-rendering
-        onClick={() => {
-          // setCount(count + 1);
-          setLight(light == 'ON' ? 'OFF' : 'ON');
-        }}
-      >
-        {light === 'ON' ? '끄기' : '켜기'}
-      </button>
+      {/* <Bulb />
+      <Counter /> */}
+      <Register />
     </>
   );
 
